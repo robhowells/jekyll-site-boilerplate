@@ -1,0 +1,23 @@
+<header role="banner">
+    <div class="container row mbn">
+        <div class="twelve columns">
+            <p>Header content</p>
+            <nav>
+                <ul>
+                	<!-- Sorts pages by 'menu order' property
+                	Only loops through and shows pages with 'main' menu property -->
+                    {% assign pages = site.pages | sort: 'menuorder' %} 
+                    {% for p in pages %}
+                        {% if p.menu == 'main' %}
+                            <li>
+                            	<!-- Adds 'active' class if item matches current page -->
+                                <a href="{{ p.url | prepend: site.baseurl }}" class="{% if p.url == page.url %} active {% endif %}">{{ p.title }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+
+                </ul>
+            </nav>
+        </div>
+    </div>      
+</header>    

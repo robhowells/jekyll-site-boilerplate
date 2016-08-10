@@ -1,0 +1,11 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="{{ "/js/dist/js.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+<script src="{{ "/app/app.js" | prepend: site.baseurl }}"></script>
+
+{% if page.url == '/xyz' %}
+	<script type="text/javascript">
+		//page specific scripts
+	</script>
+{% endif %}
+

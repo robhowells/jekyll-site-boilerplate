@@ -1,0 +1,14 @@
+# Site settings
+title: Site Title
+email: info@examplesite.com
+description: > # this means to ignore newlines until "baseurl:"
+  Site description to go here
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://examplesite.com" # the base hostname & protocol for your site
+# Prevent node modules being copied to site folder
+exclude: ['node_modules']
+# Support for AngualrJS
+gems:
+  - jekyll-angular
+# Build settings
+markdown: kramdown
