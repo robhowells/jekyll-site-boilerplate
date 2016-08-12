@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-    var jsFiles = ['js/src/vendors/*.js', 'js/src/components/*.js', 'js/src/*.js', 'js/src/app.js' ];
+    var jsFiles = ['js/src/vendors/*.js', 'js/src/components/*.js', 'js/src/*.js'];
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         sass: {
